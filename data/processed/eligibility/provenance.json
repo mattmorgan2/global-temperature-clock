@@ -1,0 +1,47 @@
+{
+  "generated_at": "2026-11-11T18:22:47.967464+00:00",
+  "python_version": "3.12.14",
+  "git_commit": "9746bedcf0df3d489a0deee4438fbc7cd21dd32c",
+  "git_dirty": true,
+  "criteria": {
+    "first_year_at_most": 1926,
+    "last_year_at_least": 2026,
+    "elements": [
+      "TMAX",
+      "TMIN"
+    ]
+  },
+  "sources": {
+    "ghcnd-stations.txt": {
+      "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/ghcnd-stations.txt",
+      "retrieved_at": "2026-11-11T18:22:44.580614+00:00",
+      "sha256": "437ee87f0343bcad408a492cf7a02163fb69255364c541b4006d5d76055d0dc3",
+      "cache_file": "437ee87f0343bcad408a492cf7a02163fb69255364c541b4006d5d76055d0dc3-ghcnd-stations.txt",
+      "http_headers": {
+        "ETag": "\"ae9576-65f770a95d715\"",
+        "Last-Modified": "Wed, 04 Nov 2026 17:52:23 GMT"
+      }
+    },
+    "ghcnd-inventory.txt": {
+      "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/ghcnd-inventory.txt",
+      "retrieved_at": "2026-11-11T18:22:46.023007+00:00",
+      "sha256": "3d7378c3ecad6841340b47392f10b391c42a5f47369765e6bb032704d2301125",
+      "cache_file": "3d7378c3ecad6841340b47392f10b391c42a5f47369765e6bb032704d2301125-ghcnd-inventory.txt",
+      "http_headers": {
+        "ETag": "\"22b73b4-65f770a943135\"",
+        "Last-Modified": "Wed, 04 Nov 2026 17:52:23 GMT"
+      }
+    },
+    "ghcnd-countries.txt": {
+      "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/ghcnd-countries.txt",
+      "retrieved_at": "2026-11-11T18:22:46.350592+00:00",
+      "sha256": "dfc325c0f89cc6f95e03ed5d4155a78b644ad28b044017c76fcb709df104df7f",
+      "cache_file": "dfc325c0f89cc6f95e03ed5d4155a78b644ad28b044017c76fcb709df104df7f-ghcnd-countries.txt",
+      "http_headers": {
+        "ETag": "\"e4b-57acf26c7cac0\"",
+        "Last-Modified": "Fri, 16 Nov 2018 21:50:11 GMT"
+      }
+    }
+  },
+  "output_sha256": "87a17d5742d0cbe90ba22466109ca5caf132f9c6e7bba025a4d96f006cb06303"
+}

@@ -1,7 +1,52 @@
-# Methodology decisions pending
+# First-pass eligibility and pending methodology
 
-NOAA GHCN-Daily is the intended observation source. No final station-selection
-method or global temperature calculation has been selected or implemented.
+NOAA GHCN-Daily is the observation source. The first-pass filter uses only
+metadata, not daily observations. No final station-selection method or global
+temperature calculation has been selected or implemented.
+
+## Implemented metadata filter
+
+Sources (NOAA fixed-width format):
+
+- https://www.ncei.noaa.gov/pub/data/ghcn/daily/ghcnd-stations.txt
+- https://www.ncei.noaa.gov/pub/data/ghcn/daily/ghcnd-inventory.txt
+- https://www.ncei.noaa.gov/pub/data/ghcn/daily/ghcnd-countries.txt
+
+Station fields use columns 1–11 (ID), 13–20 (latitude), 22–30 (longitude),
+32–37 (elevation, metres), and 42–71 (name). Country code is the first two
+characters of the station ID, joined to country columns 1–2 and name from
+column 4 onward. These are NOAA codes, not assumed ISO country codes.
+Inventory fields use columns 1–11 (ID), 32–35 (element), 37–40 (first year),
+and 42–45 (last year). Coordinates come from station metadata, not inventory.
+
+For target year Y, retain a station only if both inventory entries exist:
+
+- TMAX first year <= 1926 and last year >= Y.
+- TMIN first year <= 1926 and last year >= Y.
+
+Y defaults dynamically to the current UTC calendar year; `--year` supports a
+recorded historical replay. Unrelated elements do not affect eligibility.
+Duplicate TMAX/TMIN inventory keys, duplicate station IDs, missing station joins,
+and missing country names for qualifying stations fail visibly rather than
+silently dropping or multiplying results. Elevation -999.9 means missing and
+is exported as an empty field.
+
+**An inventory range only identifies endpoint years with records.** A qualifying
+station may have substantial gaps between those endpoints, including missing
+days, months or years. The filter does not establish paired TMAX/TMIN observations
+on the same days, current-year completeness, quality-flag acceptance, reporting
+latency, or continuous operation. No daily data are downloaded or examined.
+It makes no assumptions about station moves, instrumentation or homogenization.
+It does not select the final 50 stations, balance geography, weight observations,
+or establish a representative global sample.
+
+Run commands and cache/output details are in the README. Cached bytes are checked
+against locally recorded SHA-256 hashes (integrity/replay, not an independently
+signed NOAA checksum). Preserve source snapshots for reproducibility because
+live NOAA files change. A dirty Git revision in provenance requires preserving
+the accompanying source diff as well; the commit ID alone cannot reproduce it.
+
+## Decisions still pending
 
 Before publishing estimates, explicitly decide and document:
 
@@ -19,5 +64,6 @@ Reproducibility requirements for the future pipeline:
 - Publish a versioned output schema with units, provenance, coverage and limitations.
 - Provide a documented command that recreates an output from recorded inputs.
 
-These are requirements for future implementation, not claims that the scaffold
-currently downloads, validates or processes NOAA observations.
+The metadata workflow already records input hashes, retrieval metadata, parameters,
+Python version, Git state and a CSV hash. Daily observation processing, scientific
+validation and temperature calculations remain future work.

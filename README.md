@@ -9,7 +9,7 @@ temperature estimates and includes no visual design.
 - `website/`: minimal Astro site, built as static HTML for eventual SiteGround hosting.
 - `data-pipeline/`: Python package and command-line entry point; no dependency on Astro.
 - `data/raw/`: local source downloads (ignored by Git).
-- `data/processed/`: local pipeline outputs (ignored by Git).
+- `data/processed/`: local CSV, country summary and provenance (ignored by Git).
 - `docs/methodology.md`: pending scientific decisions and reproducibility requirements.
 
 The intended flow is NOAA inputs → Python processing → versioned public data →
@@ -51,21 +51,67 @@ python3 -m venv .venv
 .venv/bin/python -m unittest discover -s data-pipeline/tests -v
 ```
 
-The pipeline has no runtime dependencies yet. Its CLI only reports scaffold
-status; it does not download data or calculate temperatures. No credentials or
-external services are required for these checks. Source data and generated
-outputs stay out of Git; code, configuration, lockfiles and methodology belong
-in GitHub. Future data releases need a separately documented publication policy.
+The pipeline uses Python's standard library and has no runtime dependencies.
+Tests use small local fixtures and require no NOAA access or credentials.
+
+### First-pass station eligibility
+
+From the repository root, fetch/cache NOAA metadata and write the eligible list:
+
+```sh
+.venv/bin/python -m temperature_pipeline eligible-stations
+```
+
+The default target is the current **UTC calendar year**, evaluated at run time.
+A station qualifies only when **both** TMAX and TMIN inventory records have a
+first year <= 1926 and a last year >= the target year. This is an endpoint filter:
+it does **not** establish day-by-day or year-by-year completeness, uninterrupted
+operation, quality, station-location stability, or suitability for a global
+estimate. It neither selects the final 50 stations nor calculates temperatures.
+
+Outputs in `data/processed/eligibility/`:
+
+- `qualifying-stations.csv`: all qualifying IDs, station/country names, station
+  coordinates, elevation in metres, and each element's first/last years.
+  Missing elevation (NOAA sentinel -999.9) is an empty CSV field.
+- `summary.json`: target year, total stations, country count and counts by country;
+  also printed to the terminal.
+- `provenance.json`: source URLs, retrieval times, SHA-256 hashes, HTTP validators,
+  parameters, Python version, Git revision/dirty status, and output CSV hash.
+
+The CSV is sorted by station ID; country summaries are sorted by country code.
+Cache snapshots under `data/raw/ghcnd/` are named by content hash. Per-source JSON
+pointers select the latest locally downloaded snapshot. Existing cached inputs
+are reused and their hashes verified; they are not automatically fresh NOAA data.
+To deliberately fetch current files, or replay a cached snapshot for a fixed year:
+
+```sh
+.venv/bin/python -m temperature_pipeline eligible-stations --refresh
+.venv/bin/python -m temperature_pipeline eligible-stations --offline --year 2026
+```
+
+The explicit year is a replay option, not the default. Use `--cache-dir PATH` and
+`--output-dir PATH` to isolate runs. Preserve the three cache pointers, their
+referenced snapshots, provenance, and the code used for a run to reproduce it.
+NOAA can update files independently; retrieval times record this, and a refresh
+is not an atomic NOAA-wide snapshot. Network/TLS errors fail the command rather
+than silently using old inputs. Download access requires `www.ncei.noaa.gov`.
+
+Raw downloads and generated outputs stay ignored by Git. Review the small CSV,
+summary and provenance together before deliberately adding any result; never
+force-add the raw cache. Code, tests, configuration and methodology live in
+GitHub. The website remains independent and is not wired to these outputs.
 
 ## Scientific status
 
-Station selection and the final calculation methodology remain **pending**.
+The first-pass metadata eligibility filter is implemented. Final station
+selection and the temperature calculation methodology remain **pending**.
 See [methodology decisions](docs/methodology.md). Reproducibility will require
 recorded input hashes, source metadata, parameters, dependency versions and the
 code revision for every published result.
 
 ## Checks
 
-CI builds the static website with the npm lockfile and runs the Python CLI test.
+CI builds the static website with the npm lockfile and runs the Python test suite.
 Run the commands above locally before committing. There are no scientific
 calculation tests yet because no calculation method has been implemented.

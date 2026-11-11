@@ -1,1 +1,1 @@
-"""Independent data pipeline; scientific methodology is not implemented yet."""
+"""Independent NOAA metadata eligibility pipeline; no temperature calculations."""

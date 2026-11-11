@@ -1,0 +1,182 @@
+{
+  "target_year": 2026,
+  "total_qualifying_stations": 1640,
+  "country_count": 35,
+  "by_country": [
+    {
+      "country_code": "AJ",
+      "country_name": "Azerbaijan",
+      "count": 1
+    },
+    {
+      "country_code": "AS",
+      "country_name": "Australia",
+      "count": 15
+    },
+    {
+      "country_code": "AU",
+      "country_name": "Austria",
+      "count": 5
+    },
+    {
+      "country_code": "BE",
+      "country_name": "Belgium",
+      "count": 1
+    },
+    {
+      "country_code": "BK",
+      "country_name": "Bosnia and Herzegovina",
+      "count": 1
+    },
+    {
+      "country_code": "BO",
+      "country_name": "Belarus",
+      "count": 1
+    },
+    {
+      "country_code": "CA",
+      "country_name": "Canada",
+      "count": 20
+    },
+    {
+      "country_code": "CE",
+      "country_name": "Sri Lanka",
+      "count": 1
+    },
+    {
+      "country_code": "EI",
+      "country_name": "Ireland",
+      "count": 1
+    },
+    {
+      "country_code": "EN",
+      "country_name": "Estonia",
+      "count": 7
+    },
+    {
+      "country_code": "FI",
+      "country_name": "Finland",
+      "count": 1
+    },
+    {
+      "country_code": "FR",
+      "country_name": "France",
+      "count": 13
+    },
+    {
+      "country_code": "GL",
+      "country_name": "Greenland [Denmark]",
+      "count": 1
+    },
+    {
+      "country_code": "GM",
+      "country_name": "Germany",
+      "count": 39
+    },
+    {
+      "country_code": "HU",
+      "country_name": "Hungary",
+      "count": 2
+    },
+    {
+      "country_code": "KG",
+      "country_name": "Kyrgyzstan",
+      "count": 1
+    },
+    {
+      "country_code": "KS",
+      "country_name": "Korea, South",
+      "count": 1
+    },
+    {
+      "country_code": "KZ",
+      "country_name": "Kazakhstan",
+      "count": 7
+    },
+    {
+      "country_code": "LH",
+      "country_name": "Lithuania",
+      "count": 1
+    },
+    {
+      "country_code": "LY",
+      "country_name": "Libya",
+      "count": 2
+    },
+    {
+      "country_code": "MD",
+      "country_name": "Moldova",
+      "count": 1
+    },
+    {
+      "country_code": "NL",
+      "country_name": "Netherlands",
+      "count": 5
+    },
+    {
+      "country_code": "NO",
+      "country_name": "Norway",
+      "count": 1
+    },
+    {
+      "country_code": "PO",
+      "country_name": "Portugal",
+      "count": 1
+    },
+    {
+      "country_code": "RO",
+      "country_name": "Romania",
+      "count": 6
+    },
+    {
+      "country_code": "RQ",
+      "country_name": "Puerto Rico [United States]",
+      "count": 7
+    },
+    {
+      "country_code": "RS",
+      "country_name": "Russia",
+      "count": 9
+    },
+    {
+      "country_code": "SP",
+      "country_name": "Spain",
+      "count": 8
+    },
+    {
+      "country_code": "SW",
+      "country_name": "Sweden",
+      "count": 17
+    },
+    {
+      "country_code": "SZ",
+      "country_name": "Switzerland",
+      "count": 5
+    },
+    {
+      "country_code": "TI",
+      "country_name": "Tajikistan",
+      "count": 1
+    },
+    {
+      "country_code": "TX",
+      "country_name": "Turkmenistan",
+      "count": 4
+    },
+    {
+      "country_code": "UK",
+      "country_name": "United Kingdom",
+      "count": 11
+    },
+    {
+      "country_code": "UP",
+      "country_name": "Ukraine",
+      "count": 3
+    },
+    {
+      "country_code": "US",
+      "country_name": "United States",
+      "count": 1440
+    }
+  ]
+}
