@@ -1,0 +1,4 @@
+review_number,station_id,station_name,selected_completeness_percent,candidate_station_id,candidate_station_name,candidate_country,candidate_latitude,candidate_longitude,distance_km,candidate_both_valid_days,candidate_completeness_percent,candidate_eligible_70pct,completeness_gain_percentage_points,substantially_more_complete_candidates_within_100km
+38,USC00260438,ARTHUR 4NW,93.04057383781416,USW00024121,ELKO RGNL AP,United States,40.8239,-115.7864,50.82164543964385,18263,100.0,True,6.959426162185835,1
+39,USC00406619,NORRIS,93.66478672726276,USW00013891,KNOXVILLE AP,United States,35.8181,-83.9858,44.43022185262678,18262,99.99452444833817,True,6.329737721075404,4
+41,RSM00022602,REBOLY,94.35470623665334,FIE00145452,VALTIMO KK,Finland,63.6667,28.8325,99.2395316364619,18240,99.8740623117779,True,5.519356075124563,2

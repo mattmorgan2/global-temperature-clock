@@ -1,0 +1,41 @@
+{
+  "analysis_start": "1976-01-01",
+  "analysis_end": "2025-12-31",
+  "total_calendar_days": 18263,
+  "selected_station_count": 50,
+  "candidate_pool_count": 5243,
+  "eligible_70pct_candidate_count": 3992,
+  "available_daily_files": 50,
+  "unknown_elevations": 0,
+  "endpoint_mismatch_stations": 0,
+  "minimum_completeness_percent": 70.36631440617643,
+  "maximum_completeness_percent": 99.70979576192302,
+  "median_completeness_percent": 88.59716366423918,
+  "stations_with_gap_at_least_365_days": 15,
+  "stations_with_gap_at_least_730_days": 4,
+  "longest_incomplete_run_days": 1514,
+  "stations_with_substantially_more_complete_candidate_within_100km": 3,
+  "substantial_gain_percentage_points": 5,
+  "missing_information": [],
+  "plot_validation": {
+    "map_markers": 50,
+    "map_number_labels": 50,
+    "histogram_bin_counts": [
+      11,
+      1,
+      5,
+      13,
+      11,
+      9
+    ],
+    "histogram_edges_percent": [
+      70.0,
+      75.0,
+      80.0,
+      85.0,
+      90.0,
+      95.0,
+      100.0
+    ]
+  }
+}

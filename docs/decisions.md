@@ -42,10 +42,37 @@ repository sources. This document does not change the running methodology.
 
 | Item | Current provisional position | Limits / implementation status |
 |---|---|---|
-| Missing-day rule | Use the mean of the previous **10 actual observations** for a missing day. | Provisional, not implemented in the current completeness calculations. Filled values are not actual observations for this lookback. Whether this operates on each element or a station daily temperature, treatment of fewer than 10 observations, and permissible age/length of gaps remain unresolved. |
+| Missing-day rule | For a missing observation, use the arithmetic mean of the same station’s **ten most recent valid observations for the same month and day in preceding years**. | Explicitly provisional and not implemented. Skip years without valid same-date observations; never use substituted values or future years. Fewer-than-ten fallback and February 29 handling remain open. See the precise definition below. |
 | Observation source | GHCN-Daily is the source used by the existing pipeline and experiments. | This is not a decision that GHCN alone provides adequate worldwide coverage or that other observational sources are excluded. |
 | Geographic exploration | HEALPix is the current equal-area grid tool for experiments. | No final grid resolution, grid orientation, one-station-per-cell rule, or optimization method has been adopted. Random one-per-cell simulations were diagnostics only. |
 | Station history | Completed experiments have not assessed station moves. | This is not an assumption of location stability or a final policy on station-history treatment. |
+
+### Provisional same-calendar-date substitution
+
+For a missing station observation on month/day in year Y:
+
+1. Look only at recorded observations from **the same station, for the same
+   month and day, in years strictly preceding Y**.
+2. A valid daily observation requires **both TMAX and TMIN to be present and
+   have blank quality flags**. Skip years without a valid same-date observation.
+3. Select the **ten most recent valid** observations meeting those conditions,
+   then take their **arithmetic mean**. The ten observations need not come from
+   ten consecutive years.
+4. **Do not average the preceding ten calendar days. Do not use previously
+   substituted values. Do not use observations from future years.**
+
+For example, if **January 11, 2026** is missing, use the ten most recent valid
+**January 11** observations from years **before 2026**, skipping years with
+missing or invalid measurements. January 1–10, 2026 are not the input dates.
+
+If fewer than ten prior valid same-date observations are available, the
+**fallback is not yet decided**. **February 29 handling remains an open
+question**; no mapping to another date or leap-day fallback has been adopted.
+
+This rule remains **provisional and unimplemented**. It does not settle the
+station daily-temperature formula or other open aggregation decisions. Its
+same-date historical lookback does not introduce recent-completeness weighting
+into station eligibility or geographic selection.
 
 The provisional missing-day rule was **not** used to calculate eligibility,
 paired-day completeness, or any saved HEALPix result. Those experiments count
@@ -65,7 +92,9 @@ calculation has been selected or implemented.
 | Minimum completeness | No threshold is selected. Experiments compare 70%, 75%, 80%, 85%, 90% and 95%; overall percentages must be considered alongside gap lengths and timing. |
 | Final station count | No number is fixed. Roughly 50 was an exploratory idea, not a requirement; occupied-cell counts do not determine the correct final number. |
 | Geographic optimization | Final grid, resolution/orientation, within-cell choice, cross-boundary spacing, geographic objective and land/island treatment remain open. HEALPix occupancy alone does not establish even representation. |
-| Extended reporting gaps | Maximum acceptable consecutive gap, lookback age, behavior with fewer than 10 actual observations, and handling prolonged outages under a fixed station set remain open. |
+| Insufficient same-date history | The fallback when fewer than ten prior valid same-month/day observations exist is not yet decided. |
+| February 29 | Handling leap-day substitutions remains undecided. |
+| Extended reporting gaps | Maximum acceptable consecutive gap, permissible age of historical same-date inputs, and handling prolonged outages under a fixed station set remain open. |
 | Additional observations | Whether other observational archives are needed, and how to reconcile their station identities, units, quality flags and provenance with GHCN, remain open. A gap in GHCN does not prove that no observations exist elsewhere. |
 | Final daily calculation | Station-level TMAX/TMIN combination, aggregation/weighting, day boundaries, reporting delays/revisions and uncertainty remain open under the established principles. |
 

@@ -1,0 +1,542 @@
+{
+  "generated_at": "2026-11-13T19:50:34.644619+00:00",
+  "inspection_script_sha256": "8f5230ef3bb3ff700b39fb369571f51c0924d8c93ccb9b1aa40be5753877e6f8",
+  "network_input_sha256": "e97e6b75d20e73ed261b0df823d62b1c47c48675757516953f6ec2cfba49b1bb",
+  "candidate_input_sha256": "ea11cc3816fb5f17f0e05c218ae4cbb506101079551f230f086dcb573ad4f2d9",
+  "source_provenance_sha256": "c68ec1623f3fc2f09ce9e8f168c6035a7773efdb1e140c61f107f1d73f23a3b7",
+  "daily_sources": {
+    "AYM00089611": {
+      "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/all/AYM00089611.dly",
+      "retrieved_at": "2026-11-11T19:46:58.542596+00:00",
+      "cache_file": "f804a9d729cc5f052185c4d23a66f26aa6e17521630dbd3dcd7069f48c98f701-AYM00089611.dly",
+      "sha256": "f804a9d729cc5f052185c4d23a66f26aa6e17521630dbd3dcd7069f48c98f701",
+      "http_headers": {
+        "ETag": "\"8da86-65ff414edc0f8\"",
+        "Last-Modified": "Tue, 10 Nov 2026 23:03:08 GMT"
+      }
+    },
+    "IN001020700": {
+      "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/all/IN001020700.dly",
+      "retrieved_at": "2026-11-11T19:48:22.559480+00:00",
+      "cache_file": "ec92525526cd5876c43b387f8fe86b296e0aac0fed926332f2350e75f90d8d3e-IN001020700.dly",
+      "sha256": "ec92525526cd5876c43b387f8fe86b296e0aac0fed926332f2350e75f90d8d3e",
+      "http_headers": {
+        "ETag": "\"d7bfe-65ff42dad777b\"",
+        "Last-Modified": "Tue, 10 Nov 2026 23:10:03 GMT"
+      }
+    },
+    "UV000065516": {
+      "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/all/UV000065516.dly",
+      "retrieved_at": "2026-11-11T19:54:14.872833+00:00",
+      "cache_file": "f4468a6f495975247688328e44307c162975fc03c31a3a452f9dcebf77ed5438-UV000065516.dly",
+      "sha256": "f4468a6f495975247688328e44307c162975fc03c31a3a452f9dcebf77ed5438",
+      "http_headers": {
+        "ETag": "\"9e55c-65ff5285827c5\"",
+        "Last-Modified": "Wed, 11 Nov 2026 00:20:08 GMT"
+      }
+    },
+    "AYM00088963": {
+      "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/all/AYM00088963.dly",
+      "retrieved_at": "2026-11-11T19:46:57.037095+00:00",
+      "cache_file": "593b128d1d4c839caef995f5ace0c8aace7e74670ce2bf3f40c9d0cfbf4cf46f-AYM00088963.dly",
+      "sha256": "593b128d1d4c839caef995f5ace0c8aace7e74670ce2bf3f40c9d0cfbf4cf46f",
+      "http_headers": {
+        "ETag": "\"babee-65ff414b9a12d\"",
+        "Last-Modified": "Tue, 10 Nov 2026 23:03:04 GMT"
+      }
+    },
+    "MXM00076773": {
+      "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/all/MXM00076773.dly",
+      "retrieved_at": "2026-11-11T19:49:12.275214+00:00",
+      "cache_file": "0f88a30512b75f37888d1b5872b455b698880768098232f38e93a494f0958922-MXM00076773.dly",
+      "sha256": "0f88a30512b75f37888d1b5872b455b698880768098232f38e93a494f0958922",
+      "http_headers": {
+        "ETag": "\"847ec-65ff4342412ea\"",
+        "Last-Modified": "Tue, 10 Nov 2026 23:11:51 GMT"
+      }
+    },
+    "NG000001075": {
+      "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/all/NG000001075.dly",
+      "retrieved_at": "2026-11-11T19:49:13.782180+00:00",
+      "cache_file": "6456fa8aadf63adc0801978f6dd9d5ebf5b0ac02b9634a66707a8bb3e12891ec-NG000001075.dly",
+      "sha256": "6456fa8aadf63adc0801978f6dd9d5ebf5b0ac02b9634a66707a8bb3e12891ec",
+      "http_headers": {
+        "ETag": "\"e2086-65ff434827af5\"",
+        "Last-Modified": "Tue, 10 Nov 2026 23:11:57 GMT"
+      }
+    },
+    "SF000068296": {
+      "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/all/SF000068296.dly",
+      "retrieved_at": "2026-11-11T19:49:33.453629+00:00",
+      "cache_file": "fcfaee0be93f495f1acb6eca1bc0fbe706ab8a28746acfb1a5d27834f9445b0b-SF000068296.dly",
+      "sha256": "fcfaee0be93f495f1acb6eca1bc0fbe706ab8a28746acfb1a5d27834f9445b0b",
+      "http_headers": {
+        "ETag": "\"ba48c-65ff442920647\"",
+        "Last-Modified": "Tue, 10 Nov 2026 23:15:53 GMT"
+      }
+    },
+    "MO000060195": {
+      "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/all/MO000060195.dly",
+      "retrieved_at": "2026-11-11T19:49:10.131305+00:00",
+      "cache_file": "1f389690cfe52facef7b89409999f8f9ca655fb379b51ac907598d6e0c9e94e4-MO000060195.dly",
+      "sha256": "1f389690cfe52facef7b89409999f8f9ca655fb379b51ac907598d6e0c9e94e4",
+      "http_headers": {
+        "ETag": "\"a9ac4-65ff4335f671a\"",
+        "Last-Modified": "Tue, 10 Nov 2026 23:11:38 GMT"
+      }
+    },
+    "ITW00033126": {
+      "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/all/ITW00033126.dly",
+      "retrieved_at": "2026-11-11T19:48:27.408600+00:00",
+      "cache_file": "d38a0b422189cd6b1e4c2eb34eebbfe4890dea419f9dab22ba8afdf47fa926bc-ITW00033126.dly",
+      "sha256": "d38a0b422189cd6b1e4c2eb34eebbfe4890dea419f9dab22ba8afdf47fa926bc",
+      "http_headers": {
+        "ETag": "\"199e0c-65ff42f3fc7fc\"",
+        "Last-Modified": "Tue, 10 Nov 2026 23:10:29 GMT"
+      }
+    },
+    "AYM00089564": {
+      "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/all/AYM00089564.dly",
+      "retrieved_at": "2026-11-11T19:46:59.015521+00:00",
+      "cache_file": "99072605af1ff7c94f5952a7decd07eff279b850d8090c86d8be45a1b5d5bbe2-AYM00089564.dly",
+      "sha256": "99072605af1ff7c94f5952a7decd07eff279b850d8090c86d8be45a1b5d5bbe2",
+      "http_headers": {
+        "ETag": "\"94944-65ff414e23005\"",
+        "Last-Modified": "Tue, 10 Nov 2026 23:03:07 GMT"
+      }
+    },
+    "MG000044259": {
+      "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/all/MG000044259.dly",
+      "retrieved_at": "2026-11-11T19:49:07.454436+00:00",
+      "cache_file": "a3adcd18288e5b7a32d1cafe3f29c2cb571df99eb0fcedb2489d9cc7d7de9c25-MG000044259.dly",
+      "sha256": "a3adcd18288e5b7a32d1cafe3f29c2cb571df99eb0fcedb2489d9cc7d7de9c25",
+      "http_headers": {
+        "ETag": "\"e2d2e-65ff432e827aa\"",
+        "Last-Modified": "Tue, 10 Nov 2026 23:11:30 GMT"
+      }
+    },
+    "CHM00055578": {
+      "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/all/CHM00055578.dly",
+      "retrieved_at": "2026-11-11T19:47:27.810617+00:00",
+      "cache_file": "8b5d7c0ff615eba4a882249b245aaa7e756bb193307adf2696fdeb428e8149b0-CHM00055578.dly",
+      "sha256": "8b5d7c0ff615eba4a882249b245aaa7e756bb193307adf2696fdeb428e8149b0",
+      "http_headers": {
+        "ETag": "\"cd884-65ff421f3b7ca\"",
+        "Last-Modified": "Tue, 10 Nov 2026 23:06:46 GMT"
+      }
+    },
+    "MG000044212": {
+      "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/all/MG000044212.dly",
+      "retrieved_at": "2026-11-11T19:49:07.260830+00:00",
+      "cache_file": "81a5075ef1905b99a5867f6e7859413b2f44a9106cdbcc3fc02f822b2f2a9266-MG000044212.dly",
+      "sha256": "81a5075ef1905b99a5867f6e7859413b2f44a9106cdbcc3fc02f822b2f2a9266",
+      "http_headers": {
+        "ETag": "\"ddd06-65ff432ddfe18\"",
+        "Last-Modified": "Tue, 10 Nov 2026 23:11:30 GMT"
+      }
+    },
+    "NZ000093417": {
+      "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/all/NZ000093417.dly",
+      "retrieved_at": "2026-11-11T19:49:22.270605+00:00",
+      "cache_file": "aadc11da46427019b64f04032ed74c9f468fe78bf534fe9abfabd57d96ab9c33-NZ000093417.dly",
+      "sha256": "aadc11da46427019b64f04032ed74c9f468fe78bf534fe9abfabd57d96ab9c33",
+      "http_headers": {
+        "ETag": "\"929a0-65ff43945d82c\"",
+        "Last-Modified": "Tue, 10 Nov 2026 23:13:17 GMT"
+      }
+    },
+    "SF000068712": {
+      "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/all/SF000068712.dly",
+      "retrieved_at": "2026-11-11T19:49:34.790750+00:00",
+      "cache_file": "f7f8d786762818d2e519a726cc722de489d8f1768f770b7605e2fee7eaa8f9de-SF000068712.dly",
+      "sha256": "f7f8d786762818d2e519a726cc722de489d8f1768f770b7605e2fee7eaa8f9de",
+      "http_headers": {
+        "ETag": "\"c2862-65ff44296bd4f\"",
+        "Last-Modified": "Tue, 10 Nov 2026 23:15:54 GMT"
+      }
+    },
+    "CAN02303685": {
+      "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/all/CAN02303685.dly",
+      "retrieved_at": "2026-11-11T19:47:11.336636+00:00",
+      "cache_file": "09a464c535b7a06f7feb184580d87cb9560d2967bd236a48ad9e890619d03f3f-CAN02303685.dly",
+      "sha256": "09a464c535b7a06f7feb184580d87cb9560d2967bd236a48ad9e890619d03f3f",
+      "http_headers": {
+        "ETag": "\"fcfe4-65ff41ba1695b\"",
+        "Last-Modified": "Tue, 10 Nov 2026 23:05:00 GMT"
+      }
+    },
+    "TH000048462": {
+      "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/all/TH000048462.dly",
+      "retrieved_at": "2026-11-11T19:49:55.744336+00:00",
+      "cache_file": "e41ec1780b122cecc5c32c02fa7f005dff964c1e8b8bc1bf31453185a2678067-TH000048462.dly",
+      "sha256": "e41ec1780b122cecc5c32c02fa7f005dff964c1e8b8bc1bf31453185a2678067",
+      "http_headers": {
+        "ETag": "\"e4246-65ff448d64324\"",
+        "Last-Modified": "Tue, 10 Nov 2026 23:17:38 GMT"
+      }
+    },
+    "TX000038750": {
+      "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/all/TX000038750.dly",
+      "retrieved_at": "2026-11-11T18:35:43.609621+00:00",
+      "cache_file": "576c216eb29c2b305848b7f8f37dd87cf1315930c5f5efa9223e82e1cbcd42be-TX000038750.dly",
+      "sha256": "576c216eb29c2b305848b7f8f37dd87cf1315930c5f5efa9223e82e1cbcd42be",
+      "http_headers": {
+        "ETag": "\"1346e2-65ff449a90c3e\"",
+        "Last-Modified": "Tue, 10 Nov 2026 23:17:52 GMT"
+      }
+    },
+    "MP000061974": {
+      "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/all/MP000061974.dly",
+      "retrieved_at": "2026-11-11T19:49:09.955575+00:00",
+      "cache_file": "e01d09edef2c9e1481a6313055f91bce51a2731e5255747057e894ea5cfe5adb-MP000061974.dly",
+      "sha256": "e01d09edef2c9e1481a6313055f91bce51a2731e5255747057e894ea5cfe5adb",
+      "http_headers": {
+        "ETag": "\"d2582-65ff433780f9f\"",
+        "Last-Modified": "Tue, 10 Nov 2026 23:11:40 GMT"
+      }
+    },
+    "CAN01093474": {
+      "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/all/CAN01093474.dly",
+      "retrieved_at": "2026-11-11T19:47:06.236912+00:00",
+      "cache_file": "90fe73c8bf2613493721ede17b6d0723bd2f5a559f6062c7b2f6d72952e1cb98-CAN01093474.dly",
+      "sha256": "90fe73c8bf2613493721ede17b6d0723bd2f5a559f6062c7b2f6d72952e1cb98",
+      "http_headers": {
+        "ETag": "\"e7702-65ff41a204f1d\"",
+        "Last-Modified": "Tue, 10 Nov 2026 23:04:35 GMT"
+      }
+    },
+    "BOM00033038": {
+      "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/all/BOM00033038.dly",
+      "retrieved_at": "2026-11-11T18:34:54.003737+00:00",
+      "cache_file": "01761851684605d7de57f5dcaa1cfdce64414cc0b5b249f507f92f5f3247e723-BOM00033038.dly",
+      "sha256": "01761851684605d7de57f5dcaa1cfdce64414cc0b5b249f507f92f5f3247e723",
+      "http_headers": {
+        "ETag": "\"17f610-65ff415e2c7b9\"",
+        "Last-Modified": "Tue, 10 Nov 2026 23:03:24 GMT"
+      }
+    },
+    "VQW00011624": {
+      "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/all/VQW00011624.dly",
+      "retrieved_at": "2026-11-11T19:54:18.753556+00:00",
+      "cache_file": "cb5e2d4340afff01a54fa6213310080f8d2d8b17ca61549b9d28e85ab5b94534-VQW00011624.dly",
+      "sha256": "cb5e2d4340afff01a54fa6213310080f8d2d8b17ca61549b9d28e85ab5b94534",
+      "http_headers": {
+        "ETag": "\"2097a2-65ff5292259a6\"",
+        "Last-Modified": "Wed, 11 Nov 2026 00:20:22 GMT"
+      }
+    },
+    "CHM00050788": {
+      "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/all/CHM00050788.dly",
+      "retrieved_at": "2026-11-11T19:47:22.492719+00:00",
+      "cache_file": "d4bd821cf562c93b9a7dfc46db8824de1736de850132af7ab53c6e571ca8ea72-CHM00050788.dly",
+      "sha256": "d4bd821cf562c93b9a7dfc46db8824de1736de850132af7ab53c6e571ca8ea72",
+      "http_headers": {
+        "ETag": "\"ec50e-65ff4210ced94\"",
+        "Last-Modified": "Tue, 10 Nov 2026 23:06:31 GMT"
+      }
+    },
+    "CHM00057799": {
+      "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/all/CHM00057799.dly",
+      "retrieved_at": "2026-11-11T19:47:31.269591+00:00",
+      "cache_file": "a34f58fde394d5285c62f111076d4dd0ccdbf52e42c3e6e5d7ddc15f4da2a356-CHM00057799.dly",
+      "sha256": "a34f58fde394d5285c62f111076d4dd0ccdbf52e42c3e6e5d7ddc15f4da2a356",
+      "http_headers": {
+        "ETag": "\"eb104-65ff422680d22\"",
+        "Last-Modified": "Tue, 10 Nov 2026 23:06:54 GMT"
+      }
+    },
+    "CHM00056951": {
+      "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/all/CHM00056951.dly",
+      "retrieved_at": "2026-11-11T19:47:31.074440+00:00",
+      "cache_file": "b1bbaf1ea7225265eebb42307b78b9e2fc764e0736310e1883d9ab0ddaa4a0ba-CHM00056951.dly",
+      "sha256": "b1bbaf1ea7225265eebb42307b78b9e2fc764e0736310e1883d9ab0ddaa4a0ba",
+      "http_headers": {
+        "ETag": "\"e694c-65ff422311aaf\"",
+        "Last-Modified": "Tue, 10 Nov 2026 23:06:50 GMT"
+      }
+    },
+    "ASN00014401": {
+      "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/all/ASN00014401.dly",
+      "retrieved_at": "2026-11-11T19:46:31.082496+00:00",
+      "cache_file": "97ef934e3ae416a2a2263050dcff87cc0c80ba6525375ea569030b8b3e7bb693-ASN00014401.dly",
+      "sha256": "97ef934e3ae416a2a2263050dcff87cc0c80ba6525375ea569030b8b3e7bb693",
+      "http_headers": {
+        "ETag": "\"be5f0-65f5cf3ca1100\"",
+        "Last-Modified": "Tue, 03 Nov 2026 10:44:52 GMT"
+      }
+    },
+    "RSM00020982": {
+      "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/all/RSM00020982.dly",
+      "retrieved_at": "2026-11-11T19:49:29.471562+00:00",
+      "cache_file": "981485a43afcd2ca8ca2ec816d0d9f6bde92bff2c26bf310078d3ea3f8662bd4-RSM00020982.dly",
+      "sha256": "981485a43afcd2ca8ca2ec816d0d9f6bde92bff2c26bf310078d3ea3f8662bd4",
+      "http_headers": {
+        "ETag": "\"112cfe-65ff43b9ec496\"",
+        "Last-Modified": "Tue, 10 Nov 2026 23:13:57 GMT"
+      }
+    },
+    "TI000038954": {
+      "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/all/TI000038954.dly",
+      "retrieved_at": "2026-11-11T18:35:44.019006+00:00",
+      "cache_file": "d5df87e8b73775bd5569970ca339c20762966c2ec9b9c1fb86daa4079aae2dff-TI000038954.dly",
+      "sha256": "d5df87e8b73775bd5569970ca339c20762966c2ec9b9c1fb86daa4079aae2dff",
+      "http_headers": {
+        "ETag": "\"149970-65ff4491f2f2a\"",
+        "Last-Modified": "Tue, 10 Nov 2026 23:17:43 GMT"
+      }
+    },
+    "KZ000035406": {
+      "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/all/KZ000035406.dly",
+      "retrieved_at": "2026-11-11T19:48:57.430253+00:00",
+      "cache_file": "52cf81d6df87e8e3e9992906f54177518dd0766a9df8fdcf09de6a5ac018db86-KZ000035406.dly",
+      "sha256": "52cf81d6df87e8e3e9992906f54177518dd0766a9df8fdcf09de6a5ac018db86",
+      "http_headers": {
+        "ETag": "\"12d2de-65ff431827ce1\"",
+        "Last-Modified": "Tue, 10 Nov 2026 23:11:07 GMT"
+      }
+    },
+    "KZ000035796": {
+      "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/all/KZ000035796.dly",
+      "retrieved_at": "2026-11-11T19:48:59.142354+00:00",
+      "cache_file": "87e700a770849dbcab521c04710b43f1d90835093159e351d8fd8994efd3075d-KZ000035796.dly",
+      "sha256": "87e700a770849dbcab521c04710b43f1d90835093159e351d8fd8994efd3075d",
+      "http_headers": {
+        "ETag": "\"11945a-65ff431a3f350\"",
+        "Last-Modified": "Tue, 10 Nov 2026 23:11:09 GMT"
+      }
+    },
+    "CAN05050920": {
+      "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/all/CAN05050920.dly",
+      "retrieved_at": "2026-11-11T19:47:14.968564+00:00",
+      "cache_file": "d7f69a1135879c42c51b9ac3699074782757356ad659eec1f7fc0fa649426e95-CAN05050920.dly",
+      "sha256": "d7f69a1135879c42c51b9ac3699074782757356ad659eec1f7fc0fa649426e95",
+      "http_headers": {
+        "ETag": "\"198192-65ff41dae48f5\"",
+        "Last-Modified": "Tue, 10 Nov 2026 23:05:34 GMT"
+      }
+    },
+    "GL000004320": {
+      "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/all/GL000004320.dly",
+      "retrieved_at": "2026-11-11T19:47:53.196319+00:00",
+      "cache_file": "7ba587f460b0a0bc7c01c12845d5c7e0cfe6aae9217ce5a747f5342d49972394-GL000004320.dly",
+      "sha256": "7ba587f460b0a0bc7c01c12845d5c7e0cfe6aae9217ce5a747f5342d49972394",
+      "http_headers": {
+        "ETag": "\"d2bd6-65ff426d8d5a8\"",
+        "Last-Modified": "Tue, 10 Nov 2026 23:08:08 GMT"
+      }
+    },
+    "RSM00021931": {
+      "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/all/RSM00021931.dly",
+      "retrieved_at": "2026-11-11T19:49:30.319004+00:00",
+      "cache_file": "2e53d5a3eb246e0afcb9952333ba73093184294ebf07b675f155c39d7c9e00b4-RSM00021931.dly",
+      "sha256": "2e53d5a3eb246e0afcb9952333ba73093184294ebf07b675f155c39d7c9e00b4",
+      "http_headers": {
+        "ETag": "\"12ea12-65ff43bb59c43\"",
+        "Last-Modified": "Tue, 10 Nov 2026 23:13:58 GMT"
+      }
+    },
+    "RSM00032389": {
+      "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/all/RSM00032389.dly",
+      "retrieved_at": "2026-11-11T18:35:33.339068+00:00",
+      "cache_file": "761b89260ae680f3623ac4f9dfc106f01569648d67ca08e760390ebfd0636e91-RSM00032389.dly",
+      "sha256": "761b89260ae680f3623ac4f9dfc106f01569648d67ca08e760390ebfd0636e91",
+      "http_headers": {
+        "ETag": "\"151c38-65ff441595ef7\"",
+        "Last-Modified": "Tue, 10 Nov 2026 23:15:33 GMT"
+      }
+    },
+    "ASN00015602": {
+      "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/all/ASN00015602.dly",
+      "retrieved_at": "2026-11-11T19:46:34.039487+00:00",
+      "cache_file": "7d29c58b27e536f6ba8c659d26754f05f81eb9b6f0987cb6a477a523153d2e4d-ASN00015602.dly",
+      "sha256": "7d29c58b27e536f6ba8c659d26754f05f81eb9b6f0987cb6a477a523153d2e4d",
+      "http_headers": {
+        "ETag": "\"92022-65ff413e889ab\"",
+        "Last-Modified": "Tue, 10 Nov 2026 23:02:50 GMT"
+      }
+    },
+    "GL000004360": {
+      "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/all/GL000004360.dly",
+      "retrieved_at": "2026-11-11T18:35:08.209435+00:00",
+      "cache_file": "8243556cdcde68cbfc1f38502c7f3331e3fb925bfeb87e2ebaefbcdd4a35c066-GL000004360.dly",
+      "sha256": "8243556cdcde68cbfc1f38502c7f3331e3fb925bfeb87e2ebaefbcdd4a35c066",
+      "http_headers": {
+        "ETag": "\"16292a-65ff426dd3aa9\"",
+        "Last-Modified": "Tue, 10 Nov 2026 23:08:08 GMT"
+      }
+    },
+    "RSM00024738": {
+      "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/all/RSM00024738.dly",
+      "retrieved_at": "2026-11-11T19:49:31.983901+00:00",
+      "cache_file": "5e5e526dc2f8ef4fda213becdaa03dbff75ff703e36813864a679feecb14b19e-RSM00024738.dly",
+      "sha256": "5e5e526dc2f8ef4fda213becdaa03dbff75ff703e36813864a679feecb14b19e",
+      "http_headers": {
+        "ETag": "\"13187a-65ff43d35fb00\"",
+        "Last-Modified": "Tue, 10 Nov 2026 23:14:23 GMT"
+      }
+    },
+    "USC00260438": {
+      "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/all/USC00260438.dly",
+      "retrieved_at": "2026-11-11T19:51:28.822585+00:00",
+      "cache_file": "4e1f29133a4963c8b785b066e94df31c0e3870a4cfd19f9b1da621b6563fb132-USC00260438.dly",
+      "sha256": "4e1f29133a4963c8b785b066e94df31c0e3870a4cfd19f9b1da621b6563fb132",
+      "http_headers": {
+        "ETag": "\"18d8d2-65ff4d034f152\"",
+        "Last-Modified": "Tue, 10 Nov 2026 23:55:30 GMT"
+      }
+    },
+    "USC00406619": {
+      "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/all/USC00406619.dly",
+      "retrieved_at": "2026-11-11T19:52:10.740967+00:00",
+      "cache_file": "5d9452f50d37f1aad530996698697b1dbe74edebe329160c2d51578941119b22-USC00406619.dly",
+      "sha256": "5d9452f50d37f1aad530996698697b1dbe74edebe329160c2d51578941119b22",
+      "http_headers": {
+        "ETag": "\"16af1c-65ff4e552d02f\"",
+        "Last-Modified": "Wed, 11 Nov 2026 00:01:24 GMT"
+      }
+    },
+    "RSM00028275": {
+      "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/all/RSM00028275.dly",
+      "retrieved_at": "2026-11-11T18:35:32.378815+00:00",
+      "cache_file": "be4630638177b3d1c7a31375b6ffd7fd279262d8bcbf44592fb0f4a835b135c5-RSM00028275.dly",
+      "sha256": "be4630638177b3d1c7a31375b6ffd7fd279262d8bcbf44592fb0f4a835b135c5",
+      "http_headers": {
+        "ETag": "\"1b5b20-65ff43eb5407e\"",
+        "Last-Modified": "Tue, 10 Nov 2026 23:14:48 GMT"
+      }
+    },
+    "RSM00022602": {
+      "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/all/RSM00022602.dly",
+      "retrieved_at": "2026-11-11T18:35:32.131301+00:00",
+      "cache_file": "431864cbe776a544debae90fd950d81f645e4babe636d4c6d4b073773a4a6a17-RSM00022602.dly",
+      "sha256": "431864cbe776a544debae90fd950d81f645e4babe636d4c6d4b073773a4a6a17",
+      "http_headers": {
+        "ETag": "\"1286ee-65ff43c150236\"",
+        "Last-Modified": "Tue, 10 Nov 2026 23:14:04 GMT"
+      }
+    },
+    "CHM00052787": {
+      "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/all/CHM00052787.dly",
+      "retrieved_at": "2026-11-11T19:47:24.094145+00:00",
+      "cache_file": "b3e6cfbb64359046d5737d5963322289c210c6ae5cf4ed2472bad05c41168d35-CHM00052787.dly",
+      "sha256": "b3e6cfbb64359046d5737d5963322289c210c6ae5cf4ed2472bad05c41168d35",
+      "http_headers": {
+        "ETag": "\"f3f66-65ff4215d1cfc\"",
+        "Last-Modified": "Tue, 10 Nov 2026 23:06:36 GMT"
+      }
+    },
+    "ISE00105694": {
+      "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/all/ISE00105694.dly",
+      "retrieved_at": "2026-11-11T19:48:26.771965+00:00",
+      "cache_file": "efc9703d6961383435389c357ee96e8608c3e02bebb3bb66cc1d2d85284fdec0-ISE00105694.dly",
+      "sha256": "efc9703d6961383435389c357ee96e8608c3e02bebb3bb66cc1d2d85284fdec0",
+      "http_headers": {
+        "ETag": "\"a6932-65ff42ee97e13\"",
+        "Last-Modified": "Tue, 10 Nov 2026 23:10:23 GMT"
+      }
+    },
+    "USC00416104": {
+      "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/all/USC00416104.dly",
+      "retrieved_at": "2026-11-11T19:52:18.456379+00:00",
+      "cache_file": "c988b6a9ab9dc16d24a0dfe2958b739c2e3bc55eb41d8af0abebf7474b8b9166-USC00416104.dly",
+      "sha256": "c988b6a9ab9dc16d24a0dfe2958b739c2e3bc55eb41d8af0abebf7474b8b9166",
+      "http_headers": {
+        "ETag": "\"2b03fe-65ff4e92b7b35\"",
+        "Last-Modified": "Wed, 11 Nov 2026 00:02:28 GMT"
+      }
+    },
+    "USW00026529": {
+      "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/all/USW00026529.dly",
+      "retrieved_at": "2026-11-11T18:44:13.426675+00:00",
+      "cache_file": "abc411c0460b1fd4e3142708e75e3ce2226162f6a71e96eb6368bc32a52b56e2-USW00026529.dly",
+      "sha256": "abc411c0460b1fd4e3142708e75e3ce2226162f6a71e96eb6368bc32a52b56e2",
+      "http_headers": {
+        "ETag": "\"2c33be-65ff51ee16729\"",
+        "Last-Modified": "Wed, 11 Nov 2026 00:17:29 GMT"
+      }
+    },
+    "USC00219170": {
+      "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/all/USC00219170.dly",
+      "retrieved_at": "2026-11-11T19:51:13.262092+00:00",
+      "cache_file": "aa514342b6cc041a8f657d7276925b00da7875f40467bb5345bca3fd016d91f2-USC00219170.dly",
+      "sha256": "aa514342b6cc041a8f657d7276925b00da7875f40467bb5345bca3fd016d91f2",
+      "http_headers": {
+        "ETag": "\"11bf98-65ff4c72b7184\"",
+        "Last-Modified": "Tue, 10 Nov 2026 23:52:58 GMT"
+      }
+    },
+    "ASN00007045": {
+      "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/all/ASN00007045.dly",
+      "retrieved_at": "2026-11-11T19:46:26.133186+00:00",
+      "cache_file": "40c99ef65bb6222f5260eeef0c63b40038f93a34ddce03493a244b982969fbf9-ASN00007045.dly",
+      "sha256": "40c99ef65bb6222f5260eeef0c63b40038f93a34ddce03493a244b982969fbf9",
+      "http_headers": {
+        "ETag": "\"ed5ee-65f5ced696040\"",
+        "Last-Modified": "Tue, 03 Nov 2026 10:43:05 GMT"
+      }
+    },
+    "GMM00010704": {
+      "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/all/GMM00010704.dly",
+      "retrieved_at": "2026-11-11T19:48:20.337726+00:00",
+      "cache_file": "5380254b3acafadfa9618fe45411d3abd5a2ad2fde9cc1565c37f64687e6a703-GMM00010704.dly",
+      "sha256": "5380254b3acafadfa9618fe45411d3abd5a2ad2fde9cc1565c37f64687e6a703",
+      "http_headers": {
+        "ETag": "\"f2e86-65ff42c4a2643\"",
+        "Last-Modified": "Tue, 10 Nov 2026 23:09:39 GMT"
+      }
+    },
+    "CAN07060400": {
+      "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/all/CAN07060400.dly",
+      "retrieved_at": "2026-11-11T19:47:19.728200+00:00",
+      "cache_file": "d020fe4e5703576ed291fa7c5d10102c385d3d6568c2a1368ab39321ae27e791-CAN07060400.dly",
+      "sha256": "d020fe4e5703576ed291fa7c5d10102c385d3d6568c2a1368ab39321ae27e791",
+      "http_headers": {
+        "ETag": "\"1efb40-65ff41f876e55\"",
+        "Last-Modified": "Tue, 10 Nov 2026 23:06:05 GMT"
+      }
+    },
+    "ASN00048027": {
+      "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/all/ASN00048027.dly",
+      "retrieved_at": "2026-11-11T19:46:43.867637+00:00",
+      "cache_file": "04f1f824b8ec062898ebb869c5af4316efe182ca3f62b596a1df36f0304c9a35-ASN00048027.dly",
+      "sha256": "04f1f824b8ec062898ebb869c5af4316efe182ca3f62b596a1df36f0304c9a35",
+      "http_headers": {
+        "ETag": "\"cbe26-65ff4144e871f\"",
+        "Last-Modified": "Tue, 10 Nov 2026 23:02:57 GMT"
+      }
+    }
+  },
+  "period": [
+    "1976-01-01",
+    "2025-12-31"
+  ],
+  "neighbor_pool": "70%-eligible 3992, self excluded; full 5243 also tabulated",
+  "substantial_flag": "within 100 km and at least 5 percentage points higher over full period; not a replacement proposal",
+  "network_unchanged": true,
+  "no_optimization_run": true,
+  "output_sha256": {
+    "completeness-histogram.pdf": "67bc847c9378e6d38692c14c55c5a578c7b4001c5143b9ea7d0ee8d4744b450d",
+    "completeness-histogram.png": "639c8deb08ce67f026246f24e2bd7bc96c5d3c92be970e49823e0d91000926ba",
+    "endpoint-checks.csv": "a527caed206a41360acef1be7d60beb8637d232c68b625d3a8fa5f90824c549f",
+    "geographic-reference.csv": "6dac2c979966bd92c88462a468c5258904ffab079cf10fa98a4f804e4ca06166",
+    "incomplete-runs.csv": "69e43b2fc7d06998882f4d49f657f89f20a648e4bf9dad30417418c0e07020df",
+    "longest-gaps.csv": "fe8640c0577a1c02cc6109b7f8494332873d80b61ae78aedee659053dd3bb535",
+    "nearby-candidates.csv": "ad20fa53be283141e68c842b5a2f5b903ab9865b0f1b502bc06cc6d70ddaf9aa",
+    "numbered-network-map.pdf": "1dfeb1d8e3e4260592c72f9dda5c940c7c184001bc0b82ad69361840ea91946e",
+    "numbered-network-map.png": "2ee13f46cd822743daf9fd1633a6db6c84736d8541137aeb0966541f79f94842",
+    "report.md": "761d722b021fe292f37230d84e2ce6aa0dde9a385cdd5cb4be107deceec924ed",
+    "station-review.csv": "6fe7e6037e73fc408206e660cb2c1a2b07745d73d65f5da5332824981ab11911",
+    "stations-with-nearby-higher-completeness.csv": "c82c75489e8ca13326afe41bb9dc4a7dd08d25c252ad9e59466803c13c67356b",
+    "substantially-more-complete-neighbors-within-100km.csv": "bb8061005c3e362abc18c775cbdb9191eb5d62d6a6a57779a10875f5f7649413",
+    "summary.json": "654d6f4bebd873c0bbd6ba00c57fadac6b894dcced55466ff8d2161b86dbcb84",
+    "validation.json": "22c42ac3ffa0c7ec3a897ec766401c188d197b4da527264f8c4f3a450dd9caa2"
+  },
+  "validation_script_sha256": "b976e62e5bac5cd4824cb6ea965711283d0522834267d6e3a4d796601148505b",
+  "documentation_update": {
+    "date": "2026-11-13",
+    "scope": "Correct provisional same-calendar-date substitution wording only; no inspection or optimization rerun.",
+    "original_inspection_script_sha256": "8f5230ef3bb3ff700b39fb369571f51c0924d8c93ccb9b1aa40be5753877e6f8",
+    "current_review_script_sha256": "b253be97ec6fa46814c74b6eca3cd9ddbdd6c2f5d6a20567d8da5fd56ca8549f",
+    "numeric_outputs_and_maps_unchanged": true
+  }
+}

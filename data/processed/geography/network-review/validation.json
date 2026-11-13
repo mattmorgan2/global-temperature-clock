@@ -1,0 +1,10 @@
+{
+  "unique_sorted_network_rows": 50,
+  "input_network_hash_unchanged": true,
+  "independently_recomputed_gap_dates_and_all_maximum_ties": 50,
+  "independent_haversine_counts_and_maxima_checks": 300,
+  "geographic_statistics_copied_exactly": true,
+  "histogram_station_count": 50,
+  "inspection_unit_tests_passed": 7,
+  "no_optimization_or_replacement_performed": true
+}
