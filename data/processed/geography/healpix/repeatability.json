@@ -1,0 +1,12 @@
+{
+  "second_run_csvs_byte_identical": {
+    "one-per-cell-summary.csv": true,
+    "neighbor-cell-pairs.csv": true,
+    "one-per-cell-simulations.csv": true,
+    "cell-coverage.csv": true,
+    "coverage.csv": true,
+    "land-nearest-station-distances.csv": true,
+    "station-cell-assignments.csv": true,
+    "spacing.csv": true
+  }
+}

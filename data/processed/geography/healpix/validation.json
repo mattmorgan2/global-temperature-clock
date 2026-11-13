@@ -1,0 +1,87 @@
+{
+  "grid_geometry": [
+    {
+      "nside": 1,
+      "land_area_km2": 145471696.55173668,
+      "global_land_relative_error": 1.0163605512758522e-09,
+      "max_pixel_area_relative_error": 2.852291896671133e-06,
+      "boundary_convergence_relative_land_error": 5.646375930715026e-06,
+      "land_cell_count_change_on_doubling_boundary_step": 0
+    },
+    {
+      "nside": 2,
+      "land_area_km2": 145471696.55093026,
+      "global_land_relative_error": 1.0108172077138988e-09,
+      "max_pixel_area_relative_error": 1.10708570622009e-06,
+      "boundary_convergence_relative_land_error": 2.363805809617949e-06,
+      "land_cell_count_change_on_doubling_boundary_step": 0
+    },
+    {
+      "nside": 4,
+      "land_area_km2": 145471696.42774585,
+      "global_land_relative_error": 1.640241276135157e-10,
+      "max_pixel_area_relative_error": 1.6520356034277484e-06,
+      "boundary_convergence_relative_land_error": 1.4523394045024458e-06,
+      "land_cell_count_change_on_doubling_boundary_step": 0
+    },
+    {
+      "nside": 8,
+      "land_area_km2": 145471695.8370539,
+      "global_land_relative_error": 3.896504230382902e-09,
+      "max_pixel_area_relative_error": 1.7857627654382924e-06,
+      "boundary_convergence_relative_land_error": 5.101123401150099e-07,
+      "land_cell_count_change_on_doubling_boundary_step": 0
+    }
+  ],
+  "sampling_convergence": [
+    {
+      "threshold_percent": 70,
+      "fine_nside": 1024,
+      "coarse_nside": 512,
+      "p50_distance_change_km": -0.013365995466301683,
+      "p95_distance_change_km": -0.13629510660121014
+    },
+    {
+      "threshold_percent": 75,
+      "fine_nside": 1024,
+      "coarse_nside": 512,
+      "p50_distance_change_km": -0.07441641178411373,
+      "p95_distance_change_km": -0.18118885123476502
+    },
+    {
+      "threshold_percent": 80,
+      "fine_nside": 1024,
+      "coarse_nside": 512,
+      "p50_distance_change_km": -0.002880195258171625,
+      "p95_distance_change_km": -0.32794696945347823
+    },
+    {
+      "threshold_percent": 85,
+      "fine_nside": 1024,
+      "coarse_nside": 512,
+      "p50_distance_change_km": -0.40113748000737814,
+      "p95_distance_change_km": -0.3372592999594417
+    },
+    {
+      "threshold_percent": 90,
+      "fine_nside": 1024,
+      "coarse_nside": 512,
+      "p50_distance_change_km": -0.4497676671089721,
+      "p95_distance_change_km": -0.5072645451800781
+    },
+    {
+      "threshold_percent": 95,
+      "fine_nside": 1024,
+      "coarse_nside": 512,
+      "p50_distance_change_km": -0.27729371660279867,
+      "p95_distance_change_km": -0.5583780276956531
+    }
+  ],
+  "fine_sample_land_points": 3588564,
+  "coarse_sample_land_points": 897131,
+  "sample_land_area_km2": 145467444.9036545,
+  "polygon_land_area_km2": 145471696.40388498,
+  "sampling_area_relative_difference": -2.92256180108863e-05,
+  "duplicate_coordinate_station_ids": 2,
+  "all_checks_passed": true
+}

@@ -115,3 +115,68 @@ code revision for every published result.
 CI builds the static website with the npm lockfile and runs the Python test suite.
 Run the commands above locally before committing. There are no scientific
 calculation tests yet because no calculation method has been implemented.
+
+## Second-stage daily completeness (1926–2025)
+
+Use the committed first-pass CSV without regenerating it:
+
+```sh
+.venv/bin/python -m temperature_pipeline completeness
+```
+
+This downloads each station's NOAA `all/STATION_ID.dly` file and analyzes the
+inclusive period **1926-01-01 through 2025-12-31** (36,525 calendar days). A day
+is complete only if TMAX and TMIN are both present (`VALUE != -9999`) and each
+has a blank GHCN quality flag. See [methodology](docs/methodology.md) for flags
+and limitations. The passing pool requires at least 95% paired-valid days:
+34,699 or more days, allowing at most 1,826 incomplete days. This is a coverage
+threshold, not proof of an uninterrupted record or a final station selection.
+
+Outputs under `data/processed/completeness/` (ignored until explicitly reviewed):
+
+- `station-completeness.csv`: every input station with original metadata, valid
+  TMAX/TMIN counts, paired-valid count and percentage, incomplete-day count,
+  longest incomplete run, threshold result and QC rejection counts.
+- `qualifying-stations-95pct.csv`: the passing rows with the same fields.
+- `summary.json`: counts, passing-country distribution, completeness bins,
+  median across all stations and across passers, minimum passing percentage,
+  longest gaps and QC-flag counts.
+- `provenance.json`: input CSV hash, per-station source URL/retrieval time/hash,
+  period, validity/threshold rules, code hashes, Git state, Python version and
+  output hashes.
+
+Downloads live in the ignored `data/raw/ghcnd-daily/` cache. Successful station
+metrics are checkpointed there by source hash, analysis period and analysis-code
+hash. Rerunning resumes by reusing verified cached files and matching metrics;
+no network request is made for a cached file by default. Four download workers
+are used (set `--workers 1` through `--workers 8`). Transient failures get up to
+three attempts. If any stations fail, the command exits nonzero, writes
+`failures.json`, retains successes for resumption and does not replace aggregate
+outputs. Existing aggregate outputs can therefore be from an earlier run; check
+provenance and command success before using them.
+
+For a deliberate NOAA update or network-free replay:
+
+```sh
+.venv/bin/python -m temperature_pipeline completeness --refresh
+.venv/bin/python -m temperature_pipeline completeness --offline
+```
+
+Refresh uses HTTP conditional requests when validators are available, retaining
+unchanged files on a 304 response and preserving old content-addressed snapshots
+when data change. The input file, cache directory and output directory can be
+set with `--input-csv`, `--cache-dir` and `--output-dir`. Preserve cache pointers,
+snapshots, code and provenance together for replay. NOAA files are fetched at
+different times; this is not an atomic snapshot of NOAA's archive.
+
+## Equal-area geographic coverage
+
+The exploratory HEALPix analysis uses frozen 1976–2025 completeness metrics,
+actual station coordinates, and Natural Earth land-minus-lakes geometry.
+It compares all four grid resolutions and six completeness thresholds without
+selecting final stations or changing eligibility/completeness calculations.
+
+See [analysis methods and reproduction commands](analysis/healpix/README.md)
+and the [coverage report](data/processed/geography/healpix/report.md).
+Code, tests, pinned dependencies, frozen inputs, maps, CSV results and provenance
+are versioned; raw downloads, caches and build outputs are excluded.

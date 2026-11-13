@@ -1,0 +1,71 @@
+{
+  "generated_at": "2026-11-11T22:10:23.890169+00:00",
+  "analysis_period": [
+    "1976-01-01",
+    "2025-12-31"
+  ],
+  "station_metrics_sha256": "ea11cc3816fb5f17f0e05c218ae4cbb506101079551f230f086dcb573ad4f2d9",
+  "analysis_script_sha256": "a0be6742e83cee64c6d84bc78267374c5b41ecf22f3e3787e0facfc6056dfb9e",
+  "sources": {
+    "ne_10m_land.geojson": {
+      "url": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/ca96624a56bd078437bca8184e78163e5039ad19/geojson/ne_10m_land.geojson",
+      "sha256": "1ac90796408bc6ad6911d69448485d3c4dbf2190370080368a09976e1c9f7416",
+      "bytes": 10157965
+    },
+    "ne_10m_lakes.geojson": {
+      "url": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/ca96624a56bd078437bca8184e78163e5039ad19/geojson/ne_10m_lakes.geojson",
+      "sha256": "2d036f53dedec578001c5c30c2959ee7d4eebc1306900fa4367c49929ec8f2d9",
+      "bytes": 5043554
+    }
+  },
+  "earth_radius_km": 6371.0088,
+  "healpix_ordering": "NESTED",
+  "nsides": [
+    1,
+    2,
+    4,
+    8
+  ],
+  "thresholds": [
+    70,
+    75,
+    80,
+    85,
+    90,
+    95
+  ],
+  "boundary_step": 256,
+  "land_sample_nside": 1024,
+  "random_seed": 20261111,
+  "simulations_per_configuration": 32,
+  "simulation_land_points": 100000,
+  "dependencies": {
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "healpy": "1.18.1",
+    "shapely": "2.1.1",
+    "pyproj": "3.7.1",
+    "matplotlib": "3.10.3"
+  },
+  "output_sha256": {
+    "one-per-cell-summary.csv": "52a80fe3129aefc1174eaf3782ecac2efd2b02e3b316729ac39529b04f23d446",
+    "repeatability.json": "0e549d97804ec436189ee26c87a40a7df17871ebf015517c824b9f15ce18e25b",
+    "neighbor-cell-pairs.csv": "39f5bbcadd02065a4d7dee6b1d34fb98eec69c2e951db20b09a8b560bccf980c",
+    "one-per-cell-simulations.csv": "6c2b28c2eb4a97ffe21bee2288e92171cf9fd04c6ad8ed57eabd3aa14b69943f",
+    "cell-coverage.csv": "d958b3886b42aaa4e01c4978494a15b1f98635194754446d953968000333f160",
+    "validation.json": "e78b006fa14b2d3a31f10fd0e4e6bf9605106e4f086405c576860266003c118a",
+    "coverage.csv": "0a6c3e706022ba6e3dab7fdebe24b78f7378237815d747fa2b933865af80e220",
+    "land-nearest-station-distances.csv": "aecd42e9cff065ece058ae31afb0430de7eabc4ce7aef6eaf51fcd837ca50827",
+    "station-cell-assignments.csv": "51deddfac6ae90b37287b0c213c641e3744a4cbc30479b325a3c274e15eac4a8",
+    "spacing.csv": "5ac523cecef02cfa6ededb5e7dc3b1333b22429783d64834dc309130dbf9ac60",
+    "land-distance-sample.npz": "32ffcf46ccf9801ccd8686a25c8a5fdb227c5e9da2e1cdccaf8aa2d77004db1b",
+    "maps/healpix-48-cells.pdf": "1adec4ae760e2b10ab11bc099535fa15cbeadd3e583f17ad982523a90f18437b",
+    "maps/healpix-12-cells.png": "a93491634c02179f1f4111364dfdbe0233687cb2fff2a338fa938c2a6c953c13",
+    "maps/healpix-12-cells.pdf": "ef5128b1451bcf51d0d8475e1592b234bc12234b75808d9190d2282681222724",
+    "maps/healpix-768-cells.pdf": "c477991f16fffaa37a476fe2f61a997e21cae5c29895f438f6749ff13fdb3d4f",
+    "maps/healpix-48-cells.png": "4425c72a5a62c2e1f897bb10f36940e42c1b65b7e087a073a49d1d66c1c53036",
+    "maps/healpix-768-cells.png": "c60f3b9784da7ed07112f360971f32f55d160ddad7956e3378cc37e491ad1a47",
+    "maps/healpix-192-cells.png": "e8464ee39aef37faace699f16d26da25d26bc65417d6863189e98bf8b61563c3",
+    "maps/healpix-192-cells.pdf": "afdb1be4ed5754b918d8ec278f51320d21cf08391c8ef2bcb744d192f6ffbd1a"
+  }
+}
