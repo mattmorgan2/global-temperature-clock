@@ -1,0 +1,25 @@
+{
+  "numeric_csvs_byte_identical_on_second_run": {
+    "healpix-comparison.csv": true,
+    "restart-results.csv": true,
+    "comparison.csv": true,
+    "selection-trace.csv": true,
+    "networks/network-70pct-100.csv": true,
+    "networks/network-95pct-100.csv": true,
+    "networks/network-85pct-100.csv": true,
+    "networks/network-85pct-75.csv": true,
+    "networks/network-95pct-75.csv": true,
+    "networks/network-85pct-50.csv": true,
+    "networks/network-80pct-75.csv": true,
+    "networks/network-80pct-30.csv": true,
+    "networks/network-70pct-30.csv": true,
+    "networks/network-80pct-100.csv": true,
+    "networks/network-95pct-30.csv": true,
+    "networks/network-70pct-50.csv": true,
+    "networks/network-95pct-50.csv": true,
+    "networks/network-70pct-75.csv": true,
+    "networks/network-85pct-30.csv": true,
+    "networks/network-80pct-50.csv": true
+  },
+  "excluded_runtime_only_table": "performance.csv"
+}

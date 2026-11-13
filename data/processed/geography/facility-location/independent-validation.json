@@ -1,0 +1,32 @@
+{
+  "network_count": 16,
+  "full_land_sample_points": 3588564,
+  "max_independent_metric_error_km": 1.8189894035458565e-12,
+  "all_selected_rows_preserve_input_metadata": true,
+  "all_requested_counts_unique_and_eligible": true,
+  "all_training_sample_indices_reproduce_from_seeds": true,
+  "replayed_30_station_networks": [
+    {
+      "threshold_percent": 70,
+      "network_size": 30,
+      "restart": 2
+    },
+    {
+      "threshold_percent": 80,
+      "network_size": 30,
+      "restart": 1
+    },
+    {
+      "threshold_percent": 85,
+      "network_size": 30,
+      "restart": 2
+    },
+    {
+      "threshold_percent": 95,
+      "network_size": 30,
+      "restart": 2
+    }
+  ],
+  "all_original_output_hashes_match": true,
+  "all_16_map_panel_marker_counts_match_network_sizes": true
+}

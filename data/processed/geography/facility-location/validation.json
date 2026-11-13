@@ -1,0 +1,10 @@
+{
+  "all_networks_have_requested_unique_eligible_station_count": true,
+  "all_full_sample_means_above_full_pool_lower_bound": true,
+  "converged_restart_configurations": 21,
+  "total_restart_configurations": 32,
+  "mean_monotone_with_network_size": true,
+  "land_sample_points": 3588564,
+  "training_points_per_restart": 16384,
+  "max_matrix_storage_bytes": 261619712
+}

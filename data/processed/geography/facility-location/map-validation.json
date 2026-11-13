@@ -1,0 +1,62 @@
+[
+  {
+    "threshold_percent": 70,
+    "expected_station_counts": [
+      30,
+      50,
+      75,
+      100
+    ],
+    "markers_per_panel": [
+      30,
+      50,
+      75,
+      100
+    ]
+  },
+  {
+    "threshold_percent": 80,
+    "expected_station_counts": [
+      30,
+      50,
+      75,
+      100
+    ],
+    "markers_per_panel": [
+      30,
+      50,
+      75,
+      100
+    ]
+  },
+  {
+    "threshold_percent": 85,
+    "expected_station_counts": [
+      30,
+      50,
+      75,
+      100
+    ],
+    "markers_per_panel": [
+      30,
+      50,
+      75,
+      100
+    ]
+  },
+  {
+    "threshold_percent": 95,
+    "expected_station_counts": [
+      30,
+      50,
+      75,
+      100
+    ],
+    "markers_per_panel": [
+      30,
+      50,
+      75,
+      100
+    ]
+  }
+]
